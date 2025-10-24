@@ -21,10 +21,6 @@ class MainActivity : AppCompatActivity() {
         vm.team.observe(this) { team ->
             if (team != null) {
                 binding.tvClubName.text = "89. ${team.name ?: "-"}"
-                // set banner/logo
-                Glide.with(this).load(team.crest).into(binding.imgLogo)
-                // description left as static or replace:
-                // binding.tvDescription.text = "..." // if you want to update dynamically
             } else {
                 binding.tvClubName.text = "Error loading team"
             }
