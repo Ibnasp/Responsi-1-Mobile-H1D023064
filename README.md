@@ -7,5 +7,5 @@ shift baru: C
 shift asal: F
 
 Demo aplikasi:
-[App Demo](preview/Responsi 1 Mobile.gif)
-[Lihat video demo](preview/Responsi 1 Mobile.mp4)
+[App Demo](preview/Responsi_1_Mobile.gif)
+[Lihat video demo](preview/Responsi_1_Mobile.mp4)
