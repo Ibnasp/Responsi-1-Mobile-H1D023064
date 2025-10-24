@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Gambar Pelatih -->
+    <ImageView
+        android:id="@+id/ivCoach"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coach"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Card Merah -->
+    <LinearLayout
+        android:id="@+id/cardCoachInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F46C6C"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:backgroundTintMode="src_over"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp">
+
+    <!-- Nama Pelatih -->
+    <TextView
+        android:id="@+id/tvCoachName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Łukasz Kwasniok"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Tanggal Lahir -->
+    <TextView
+        android:id="@+id/tvCoachDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1981-06-12"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Negara -->
+    <TextView
+        android:id="@+id/tvCoachNation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Germany"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+</LinearLayout>
+
+    </LinearLayout>

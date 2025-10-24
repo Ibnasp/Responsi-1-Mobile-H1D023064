@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.responsi1mobile">
+
+    <!-- izin internet untuk akses API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Responsi 1 Mobile"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Responsi1Mobile">
+
+        <!-- Activity halaman squad -->
+        <activity android:name=".ui.activity.SquadActivity" />
+
+        <!-- Activity halaman coach -->
+        <activity android:name=".ui.activity.CoachActivity" />
+
+        <!-- Activity halaman history -->
+        <activity android:name=".ui.activity.HistoryActivity" />
+
+        <!-- Activity utama aplikasi -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true"> <!-- ✅ WAJIB Android 12+ -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
